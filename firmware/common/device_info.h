@@ -2,8 +2,8 @@
 #define DEVICE_INFO_H
 
 // Default name
-#if defined(PROJECT_CHAMELEON_ULTRA)
-#define DEVICE_NAME_STR         "ChameleonUltra"
+#if defined(PROJECT_CHAMELEON_X)
+#define DEVICE_NAME_STR         "ChameleonX"
 #define DEVICE_NAME_STR_SHORT   "CU"
 #elif defined(PROJECT_CHAMELEON_LITE)
 #define DEVICE_NAME_STR         "ChameleonLite"
