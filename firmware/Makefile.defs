@@ -11,7 +11,7 @@
 #GNU_PREFIX ?= arm-none-eabi
 
 
-PROJECT_NAME     := chameleon_ultra_firmware
+PROJECT_NAME     := chameleon_x_firmware
 OUTPUT_DIRECTORY := ../objects
 PROJ_DIR         := ./src
 SDK_ROOT         := ../nrf52_sdk
@@ -19,11 +19,11 @@ SRC_COMMON       := ../common
 LD_DIR           := $(SRC_COMMON)
 
 # Device type supported
-CHAMELEON_ULTRA := ultra
+CHAMELEON_ULTRA := Ultra
 CHAMELEON_LITE  := lite
 # What device is it?
 
-CURRENT_DEVICE_TYPE ?= ${CHAMELEON_ULTRA}
+CURRENT_DEVICE_TYPE ?= ${CHAMELEON_X}
 
 # Versioning information
 GIT_VERSION := $(shell git describe --abbrev=7 --dirty --always --tags --match "v*.*")
