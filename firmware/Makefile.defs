@@ -19,7 +19,7 @@ SRC_COMMON       := ../common
 LD_DIR           := $(SRC_COMMON)
 
 # Device type supported
-CHAMELEON_ULTRA := Ultra
+CHAMELEON_ULTRA := ultra
 CHAMELEON_LITE  := lite
 # What device is it?
 
