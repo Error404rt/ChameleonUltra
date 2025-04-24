@@ -4,7 +4,7 @@
 
 // Current project run on ultra or lite.
 const static chameleon_device_type_t m_device_type =
-#if defined(PROJECT_CHAMELEON_ULTRA)
+#if defined(PROJECT_CHAMELEON_X)
     CHAMELEON_ULTRA;
 #elif defined(PROJECT_CHAMELEON_LITE)
     CHAMELEON_LITE;
@@ -38,7 +38,7 @@ uint32_t g_bat_sense_pin;
 nrf_saadc_input_t g_bat_sense;
 
 
-#if defined(PROJECT_CHAMELEON_ULTRA)
+#if defined(PROJECT_CHAMELEON_X)
 uint32_t g_lf_ant_driver;
 uint32_t g_lf_oa_out;
 uint32_t g_hf_spi_select;
@@ -104,7 +104,7 @@ void hw_connect_init(void) {
     m_hw_ver = 1;
 
 
-#if defined(PROJECT_CHAMELEON_ULTRA)
+#if defined(PROJECT_CHAMELEON_X)
     if (m_hw_ver == 1) {
         LED_FIELD       = (NRF_GPIO_PIN_MAP(1, 1));
         LED_1           = (NRF_GPIO_PIN_MAP(0, 20));
