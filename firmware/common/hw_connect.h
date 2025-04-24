@@ -9,7 +9,7 @@
 #include "device_info.h"
 
 typedef enum {
-    CHAMELEON_ULTRA,
+    CHAMELEON_X,
     CHAMELEON_LITE,
 } chameleon_device_type_t;
 
@@ -74,7 +74,7 @@ extern nrf_saadc_input_t g_bat_sense;
 #define BAT_SENSE_PIN   g_bat_sense_pin
 #define BAT_SENSE       g_bat_sense
 
-#if defined(PROJECT_CHAMELEON_ULTRA)
+#if defined(PROJECT_CHAMELEON_X)
 extern uint32_t g_lf_ant_driver;
 extern uint32_t g_lf_oa_out;
 extern uint32_t g_hf_spi_select;
